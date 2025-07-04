@@ -1,0 +1,7 @@
+state 
+use effect 
+props
+prop driving 
+state
+api calling with xeos
+context api

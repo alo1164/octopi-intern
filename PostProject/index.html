@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Post Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Post Gallery</h1>
+    <p>Search & Explore Stylish Posts</p>
+  </header>
+
+  <div class="filters">
+    <input type="text" id="userIdFilter" placeholder="Search by User ID" />
+    <input type="text" id="postIdFilter" placeholder="Search by Post ID" />
+    <input type="text" id="titleFilter" placeholder="Search by Title" />
+    <input type="text" id="combinedFilter" placeholder="Search by User ID + Post ID" />
+    <button id="clearFilters">Clear Filters</button>
+  </div>
+
+  <div id="postsContainer" class="posts-grid"></div>
+
+  <div class="pagination" id="pagination"></div>
+
+  <div id="singlePostModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="post.js"></script>
+</body>
+</html>
