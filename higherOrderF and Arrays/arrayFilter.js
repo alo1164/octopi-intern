@@ -16,3 +16,15 @@ const reduce_func = (val1, val2) => {
 }
 let Narr = arr2.reduce(reduce_func)
 console.log(Narr)
+
+
+const students = [
+  { name: "Anowar", marks: 85 },
+  { name: "Rifat", marks: 33 },
+  { name: "Sami", marks: 45 },
+  { name: "Nazia", marks: 75 },
+  { name: "Shuvo", marks: 22 }
+];
+
+const PassedStd = students.filter( student => student.marks >= 40 )
+console.log(PassedStd)
